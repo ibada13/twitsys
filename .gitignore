@@ -5,6 +5,7 @@
 /bk/myenv/pyvenv.cfg
 
 /bk/myenv/Scripts/*
+!/bk/myenv/Scripts/manage.py
 !/bk/myenv/Scripts/tweet
 
 !/bk/myenv/Scripts/tweet/
