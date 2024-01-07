@@ -8,6 +8,8 @@
 !/bk/myenv/Scripts/manage.py
 !/bk/myenv/Scripts/tweet
 !/bk/myenv/Scripts/tweets
+!/bk/myenv/Scripts/db.sqlite3
+
 
 
 !/bk/myenv/Scripts/tweet/
