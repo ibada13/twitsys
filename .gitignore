@@ -1,0 +1,16 @@
+# created by virtualenv automatically
+# fr/*
+/fr/re/*
+/bk/myenv/Lib
+/bk/myenv/pyvenv.cfg
+
+/bk/myenv/Scripts/*
+!/bk/myenv/Scripts/tweet
+
+!/bk/myenv/Scripts/tweet/
+!.gitignore
+
+!/fr/re/public/
+!/fr/re/src/
+
+
