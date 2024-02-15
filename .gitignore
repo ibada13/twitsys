@@ -4,18 +4,20 @@
 /bk/myenv/Lib
 /bk/myenv/pyvenv.cfg
 
+/bk/myenv/Scripts/tweet/__pycache__/*
+/bk/myenv/Scripts/tweets/__pycache__/*.pyc
 /bk/myenv/Scripts/*
 !/bk/myenv/Scripts/manage.py
 !/bk/myenv/Scripts/tweet
 !/bk/myenv/Scripts/tweets
 !/bk/myenv/Scripts/db.sqlite3
-
-
-
-!/bk/myenv/Scripts/tweet/
+# !/bk/myenv/Scripts/tweet/
 !.gitignore
 
 !/fr/re/public/
 !/fr/re/src/
 
+
+
+bk/myenv/Scripts/tweet/__pycache__/urls.cpython-312.pyc
 
