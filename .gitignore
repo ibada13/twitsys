@@ -3,7 +3,7 @@
 /fr/re/*
 /bk/myenv/Lib
 /bk/myenv/Scripts
-/bk/myenv/pyvenv.cfg/
+/bk/myenv/pyvenv.cfg
 bk/myenv/tweet/__pycache__/
 bk/myenv/tweets/__pycache__/
 *.pyc
