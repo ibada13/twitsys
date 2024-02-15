@@ -1,6 +1,6 @@
 # created by virtualenv automatically
 # fr/*
-/fr/re/*
+/fr/node_modules
 /bk/myenv/Lib
 /bk/myenv/Scripts
 /bk/myenv/pyvenv.cfg
@@ -16,8 +16,8 @@ bk/myenv/tweets/__pycache__/
 # !/bk/myenv/Scripts/tweet/
 !.gitignore
 
-!/fr/re/public/
-!/fr/re/src/
+!/fr/public/
+!/fr/src/
 
 
 
