@@ -17,5 +17,10 @@ def tweet(req ,tid,*args,**kwargs):
         status = 404
     return JsonResponse(data,status=status)
 
-
-   
+def tweet_List(req,*args,**kwargs):
+    qs = Tweet.objects.all();
+    tweet_List = [{"id":x.id,"content":x.content,} for x in qs]
+    data={
+        "tweets":tweet_List
+    }
+    return JsonResponse(data,status=200,safe=True)
