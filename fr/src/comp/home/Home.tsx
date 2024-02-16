@@ -1,14 +1,14 @@
 import { useState,useEffect } from "react"
 import { getTweets } from "./Reqs/req";
-import { Tweet } from "./interfaces/interfaces";
+import { Tweettype } from "./interfaces/interfaces";
 export const Home = () => { 
-    const [tweets, SetTweets] = useState<Tweet[]>([]);
+    const [tweets, SetTweets] = useState<Tweettype[]>([]);
 
 
     useEffect(() => {
         const callback = (res: any) => { 
             console.log(res)
-            SetTweets(res.data.tweets as Tweet[])
+            SetTweets(res.data.tweets as Tweettype[])
         }
         getTweets(callback)
     },[])
@@ -16,11 +16,10 @@ export const Home = () => {
 
 
     return (
-        <div>
-            {tweets.map((elm:any,ind) => ( 
+        <div className="text-center">
+            {tweets.map((elm,ind) => ( 
                 <h1 key={ind}>{elm.content}</h1>
             ))}
-        <h1></h1>
         </div>
 
 

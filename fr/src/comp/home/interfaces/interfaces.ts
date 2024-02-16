@@ -1,6 +1,6 @@
-interface Tweet {
+interface Tweettype {
     id: number,
     content: String,
     image:File|null
 }
-export type { Tweet}
+export type { Tweettype}
