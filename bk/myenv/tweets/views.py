@@ -20,7 +20,7 @@ def tweet(req ,tid,*args,**kwargs):
 
 def tweet_List(req,*args,**kwargs):
     qs = Tweet.objects.all();
-    tweet_List = [{"id":x.id,"content":x.content,} for x in qs]
+    tweet_List = [{"id":x.id,"content":x.content,"likes":x.Likes} for x in qs]
     data={
         "tweets":tweet_List
     }
