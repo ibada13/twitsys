@@ -1,6 +1,7 @@
 import { useState,useEffect } from "react"
 import { getTweets } from "./Reqs/req";
 import { Tweettype } from "./interfaces/interfaces";
+import { Tweet } from "./comps/Comps";
 export const Home = () => { 
     const [tweets, SetTweets] = useState<Tweettype[]>([{id:-1,content:"sorry there is no tweets to see",image:null}]);
 
@@ -20,17 +21,7 @@ export const Home = () => {
             <div className="">
 
             {tweets.map((elm, ind) => (
-                <div key={ind} style={{height:'30vh',width:'70vh'}}>
-                    <div className="h-25 bg-danger">
-
-                    </div>
-                    <div>
-                        <h1 key={ind}>{elm.content}</h1>
-                    </div>
-                    <div className="bg-info h-25" >
-
-                    </div>
-                </div>
+                <Tweet  key={elm.id} id={elm.id} content={ elm.content} image={null}/>
             ))}
             </div>
         </div>

@@ -12,7 +12,7 @@ def tweet(req ,tid,*args,**kwargs):
     try:
         obj = Tweet.objects.get(id=tid)
         data['content'] = obj.content
-        data['likes'] = obj.Likes
+        data['likes'] = obj.likes
     except:
         data['message'] = "dosn't exist"
         status = 404
@@ -20,8 +20,8 @@ def tweet(req ,tid,*args,**kwargs):
 
 def tweet_List(req,*args,**kwargs):
     qs = Tweet.objects.all();
-    tweet_List = [{"id":x.id,"content":x.content,"likes":x.Likes} for x in qs]
+    tweet_List = [{"id":x.id,"content":x.content,"likes":x.likes} for x in qs]
     data={
         "tweets":tweet_List
     }
-    return JsonResponse(data,status=200,safe=True)
+    return JsonResponse(data,status=200,safe=False)
