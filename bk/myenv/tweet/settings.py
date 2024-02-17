@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'tweets',
-    'corsheaders'
+    'api',
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
@@ -70,11 +71,13 @@ TEMPLATES = [
     },
 ]
 
+
 WSGI_APPLICATION = 'tweet.wsgi.application'
 
-CORS_ALLOWED_ORIGINS = [
+CORS_ALLOWED_ORIGINS  = [
     "http://localhost:3000",  # Example: Allow requests from this origin
     "https://yourdomain.com",  # Add your actual domain(s)
+    "http://192.168.56.1:3000"
 ]
 
 

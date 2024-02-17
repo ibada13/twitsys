@@ -1,5 +1,6 @@
 # created by virtualenv automatically
 # fr/*
+/bk/myenv/api
 /fr/node_modules
 /bk/myenv/Lib
 /bk/myenv/Scripts
