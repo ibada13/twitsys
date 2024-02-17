@@ -12,6 +12,7 @@ def tweet(req ,tid,*args,**kwargs):
     try:
         obj = Tweet.objects.get(id=tid)
         data['content'] = obj.content
+        data['likes'] = obj.Likes
     except:
         data['message'] = "dosn't exist"
         status = 404
